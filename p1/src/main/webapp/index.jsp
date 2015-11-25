@@ -1,0 +1,137 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mushroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <%@include file="/fun/jsp/head.jsp"%>
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="row-fluid">
+        <div class="span12">
+            <nav class="navbar navbar-default  navbar-static-top  " role="navigation">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">输出属性收益分析</a>
+                    </div>
+                    <div  class="collapse navbar-collapse">
+                        <!--向左对齐-->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#"><span class="glyphicon glyphicon-pencil">&nbsp;装备及增益选择</span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-wrench">&nbsp;战斗力分析</span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-stats">&nbsp;战斗力排行榜</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: rgb(48, 105, 212);">
+                                    <span class="glyphicon glyphicon-search">&nbsp;心法选择</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">jmeter</a></li>
+                                    <li><a href="#">EJB</a></li>
+                                    <li><a href="#">Jasper Report</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">分离的链接</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">另一个分离的链接</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: rgb(212, 103, 167);">
+                                    <span class="glyphicon glyphicon-search">&nbsp;体型</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">成男</a></li>
+                                    <li><a href="#">成女</a></li>
+                                    <li><a href="#">正太</a></li>
+                                    <li><a href="#">萝莉</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <!--向右对齐-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" style="color: rgb(127, 51, 212);"><span class="glyphicon glyphicon-user">&nbsp;登录人</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: rgb(212, 143, 116);">
+                                    <span class="glyphicon glyphicon-list-alt">&nbsp;装备配置方案<b class="caret"></b></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok">&nbsp;配置方案1</span></a></li>
+                                    <li><a href="#">配置方案2</a></li>
+                                    <li><a href="#">配置方案3</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">更新当前方案</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">保存为新方案</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" >登出</a></li>
+                        </ul>
+
+                    </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#home" data-toggle="tab">
+                        W3Cschool Home
+                    </a>
+                </li>
+                <li><a href="#ios" data-toggle="tab">iOS</a></li>
+                <li class="dropdown">
+                    <a href="#" id="myTabDrop1" class="dropdown-toggle"
+                       data-toggle="dropdown">Java
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                        <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+                        <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12">
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+                </div>
+                <div class="tab-pane fade" id="ios">
+                    <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                        TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+                </div>
+                <div class="tab-pane fade" id="jmeter">
+                    <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+                </div>
+                <div class="tab-pane fade" id="ejb">
+                    <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
